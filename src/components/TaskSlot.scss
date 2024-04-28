@@ -1,0 +1,46 @@
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 40;
+
+  // margin: 5px;
+  // padding: 5px;
+  // border-radius: 50px;
+
+  &:hover {
+
+    background-color: #1b577d;
+  }
+}
+
+.task-slot {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+
+    text-align: center;
+    text-indent: 1rem;
+
+    // gap: 8rem;
+    // padding: 5 0 5 0px;
+    width: 100%;
+    border-radius: 10px;
+
+    &:hover {
+        background-color: #1b4763
+    }
+
+}
+
+p {
+
+    padding: 5px;
+}

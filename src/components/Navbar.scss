@@ -1,0 +1,37 @@
+
+.navbar {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: var(--p-darkblue);
+
+    padding-top: 2rem;
+    gap: 2rem;
+    width: 8rem;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+
+.navbar-filler {
+
+    width: 8rem;
+    height: 100vh;
+
+}
+
+.navitem {
+
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    color: var(--p-lightgray);
+
+}
+
