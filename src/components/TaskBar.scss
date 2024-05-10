@@ -1,0 +1,44 @@
+
+.taskbox{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.add-task-slot{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.taskslot{
+
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    text-align: center;
+
+    margin: 5px;
+
+    // border: solid 1px var(--p-lightbrown);
+    border-radius: 15px;
+
+    &:hover {
+        background-color: #1b4763;
+    }
+
+}
+
+.taskslot p{
+
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    text-indent: 10px;
+    margin-top: 10px;
+    padding: 0px;
+}

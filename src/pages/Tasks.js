@@ -1,7 +1,7 @@
  //About.js
  import React from 'react'
  import Navbar from './../components/Navbar';
-import TaskBox from '../components/TaskBox';
+import TaskBar from '../components/TaskBar';
 
  const Tasks = () => {
    return (
@@ -13,7 +13,7 @@ import TaskBox from '../components/TaskBox';
         <div class='centralise'>
 
           <h1> Tasks </h1>
-          <TaskBox />
+          <TaskBar />
           
         </div>
 

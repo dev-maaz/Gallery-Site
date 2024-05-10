@@ -1,0 +1,12 @@
+
+img.picture-format{
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+    border-radius: 8px;
+
+    &:hover {
+        filter: contrast(0.9) brightness(1.05);
+    }
+}
