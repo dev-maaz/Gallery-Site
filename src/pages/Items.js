@@ -1,17 +1,18 @@
- //About.js
- import React from 'react'
- import Navbar from './../components/Navbar';
 
- const Items = () => {
-   return (
+import React from 'react'
+import Gallery from './../components/Gallery.js';
+import Navbar from './../components/Navbar';
 
-     <div style={{display: 'flex'}}>
+const Items = () => {
+  return (
+    
+    <div style={{display: 'flex',  flexDirection: 'row'}}>
 
-         <Navbar />
-         <h1> Items </h1>
+        <Navbar />
+        <Gallery />
 
-     </div>
-   )
- }
+    </div>
+  )
+}
 
- export default Items
+export default Items

@@ -1,14 +1,10 @@
 :root {
 
-    --text-color: #DFD0B8;
-    
-    --p-lightgray: #F5F5F5;
-    --p-lightbrown: #DFD0B8;
-    --p-darkbrown: #948979;
-    --p-lightblue: #3C5B6F;
-    --p-darkblue: #153448;
+    --primary: #153448;
+    --primary-highlight: #204F6F;
     --text-color: #DFEDF6;
-    
+    --accent: #A23B72;
+
     font-family: "Azeret Mono";
     color: var(--text-color);
 
@@ -20,7 +16,7 @@ html , body{
     height: 100%;
 
     color: var(--text-color);
-    background-color: var(--p-darkblue);
+    background-color: var(--primary);
 
 }
 
