@@ -7,9 +7,10 @@
     --p-darkbrown: #948979;
     --p-lightblue: #3C5B6F;
     --p-darkblue: #153448;
+    --text-color: #DFEDF6;
     
     font-family: "Azeret Mono";
-    color: var(--p-lightbrown);
+    color: var(--text-color);
 
     
 }
@@ -18,7 +19,7 @@ html , body{
 
     height: 100%;
 
-    color: var(--p-lightbrown);
+    color: var(--text-color);
     background-color: var(--p-darkblue);
 
 }
