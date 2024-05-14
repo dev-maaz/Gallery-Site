@@ -10,24 +10,39 @@
 
  }
 
+ 
+
 input,textarea {
 
     text-decoration: none;
     border-style: none;
 
-    border-style: ridge;
+    border: solid 1px;
     border-width: 0.1rem;
-    border-color: #EEE;
+    border-color: var(--text-color);
     border-radius: 0.25rem;
 
-    color: --p-lightgray;
-    background-color: --p-darkbrown;
+    color: var(--text-color);
+    background-color: var(--primary);
 
     width: 25rem;
 
     text-indent: 0.5rem;
 
+    &:hover {
+        border-color: var(--text-highlight);
+    }
+
  }
+
+ input::placeholder,textarea::placeholder {
+
+    color: var(--text-color);
+    opacity: 50%;
+ }
+ 
+
+
 
 button {
 

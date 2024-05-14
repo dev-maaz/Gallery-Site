@@ -5,9 +5,9 @@ import { useState } from "react";
 
 function ContactBox() {
 
-    const [subject, setSubject] = useState("Subject");
-    const [name, setName] = useState("Name");
-    const [message, setMessage] = useState("Your Message Here ...");
+    const [subject, setSubject] = useState("");
+    const [name, setName] = useState("");
+    const [message, setMessage] = useState("");   
 
     return <>
 
@@ -16,9 +16,9 @@ function ContactBox() {
 
             <h2> Contact Me </h2>
 
-            <input name="Name" value={name} style={{height: '3rem'}} onChange={e => setName(e.target.value)}/>
-            <input name="Subject" value={subject} style={{height: '3rem'}} onChange={e => setSubject(e.target.value)}/>
-            <textarea name="Message" value={message} style={{height: '10rem'}} onChange={e => setMessage(e.target.value)}></textarea>
+            <input name="Name" value={name} placeholder='Name' style={{height: '3rem'}} onChange={e => setName(e.target.value)}/>
+            <input name="Subject" value={subject} placeholder='Subject' style={{height: '3rem'}} onChange={e => setSubject(e.target.value)}/>
+            <textarea name="Message" value={message} placeholder='Your message here ...' style={{height: '10rem'}} onChange={e => setMessage(e.target.value)}></textarea>
 
             <button> Send Mail </button>
 
