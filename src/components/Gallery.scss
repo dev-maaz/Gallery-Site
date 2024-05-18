@@ -10,7 +10,7 @@
 }
 
 .grid {display: grid}
-.grid-cols-5 {grid-template-columns: repeat(5, 1fr);}
+.grid-cols-5 {grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));}
 .gap-8 {gap: 2rem}
 .w-full {width: 100%}
 .w-half {width: 50%}
@@ -25,19 +25,5 @@ img.picture-format{
 
     &:hover {
         filter: contrast(0.9) brightness(1.05);
-    }
-}
-
-@media (max-width: 1440px) {
-    .picture-rail {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 1.5rem;
-    }
-}
-
-@media (max-width: 1280px) {
-    .picture-rail {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
     }
 }

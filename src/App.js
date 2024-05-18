@@ -6,7 +6,7 @@ import Home from './pages/Home.js';
 import Items from './pages/Items.js';
 import Contact from './pages/Contact.js';
 import Tasks from './pages/Tasks.js';
-import ImagePage from './components/ImagePage.js';
+import ImagePage from './components/ImagePage.jsx';
 
 
 function App() {

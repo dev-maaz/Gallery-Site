@@ -1,5 +1,8 @@
 
 import { useParams,  } from "react-router-dom";
+import "./ImagePage.scss";
+import Navbar from "./Navbar";
+import { Link } from "react-router-dom";
 
 const imageArray = 
 [
@@ -95,12 +98,24 @@ const ImagePage = () => {
 
   const image = imageArray.find(img => img.id === parseInt(imageId));
   
-  return <div>
-    
-    <h1>{image.title}</h1>
-    <img className="picture-format" src={image.imageUrl} alt={image.id}/>
-    <p> {image.description} </p>
-     </div>;
+  return <> 
+
+  <div className="bigContainer">
+    <Navbar />
+    <div className="bongoboy">  
+      <Link to="/Items"className="material-symbols-outlined">arrow_back</Link>
+      <div className="flex-row">
+        <img className="picture-format" src={image.imageUrl} alt={image.id}/>
+        <div class="flex-col">
+          <h1>{image.title}</h1>
+          <p> {image.description} </p>
+          <button className="material-symbols-outlined">favorite</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </>
 }
 
 export default ImagePage;

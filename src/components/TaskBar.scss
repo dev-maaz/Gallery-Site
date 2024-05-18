@@ -1,8 +1,62 @@
 
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+  
+    padding: 3px;
+    border-radius: 20px;
+
+    border: none;
+    color: var(--text-color);
+    background-color: transparent;
+
+    &:hover {
+      background-color: var(--primary-highlight);
+  }
+
+}
+
+.material-symbols-outlined.thick {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+
+    font-size: large;
+
+}
+
+.addbutton {
+
+    padding: 0px;
+    margin: 0px;
+
+    border-radius: 20px;
+    border: none;
+    color: var(--text-color);
+    background-color: var(--primary-highlight);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  
+    &:hover {
+      background-color: var(--primary-highlight);
+  }
+
+}
+
 .taskbox{
 
     display: flex;
     flex-direction: column;
+    gap:  1rem;
 
 }
 
@@ -12,33 +66,44 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    height: 3rem;
+    gap: 1rem;
 
 }
+
+.add-task-slot input{
+
+    height: 3rem;
+}
+
 
 .taskslot{
 
     display: flex;
     flex-direction: row;
     width:100%;
-    text-align: center;
+    height: 3rem;
 
-    margin: 5px;
+
+
+    margin: 0px;
 
     // border: solid 1px var(--p-lightbrown);
-    border-radius: 15px;
+    border-radius: 5px;
 
     &:hover {
-        background-color: #1b4763;
+        background-color: var(--primary-highlight);
     }
 
 }
 
+
 .taskslot p{
 
-    display: inline-block;
+    display: flex;
     width: 100%;
-    text-align: left;
+    align-items: center;
     text-indent: 10px;
-    margin-top: 10px;
+    margin-top: 0px;
     padding: 0px;
 }

@@ -2,6 +2,7 @@
  import React from 'react'
  import Navbar from './../components/Navbar';
 import TaskBar from '../components/TaskBar';
+import "./pagestyling.scss"
 
  const Tasks = () => {
    return (
@@ -10,9 +11,9 @@ import TaskBar from '../components/TaskBar';
 
          <Navbar />
 
-        <div class='centralise'>
+        <div className='centralise'>
 
-          <h1> Tasks </h1>
+          
           <TaskBar />
           
         </div>

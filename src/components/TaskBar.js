@@ -5,7 +5,8 @@ const TaskBar = () => {
   const [tasks, setTasks] = useState([]);
   const [inputValue, setInputValue] = useState('');
 
-  const handleAddTask = () => {
+  const handleAddTask = (e) => {
+    e.preventDefault();
     if (inputValue.trim() !== '') {
       setTasks([...tasks, inputValue]);
       setInputValue('');
@@ -20,18 +21,20 @@ const TaskBar = () => {
 
   return (
     <div className='taskbox'>
-      <div className='add-task-slot'>
+      <form className='add-task-slot' onSubmit={(e)=>handleAddTask(e)}>
         <input
+          name='taskinput'
           type="text"
+          placeholder='Add New Task'
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
         />
-        <span class="material-symbols-outlined" onClick={()=>handleAddTask()}> add_circle </span>
-      </div>
+        <span type='submit' className="material-symbols-outlined addbutton"> add </span>
+      </form>
         {tasks.map((task, index) => (
         <div key={index} className='taskslot'>
             <p>{task}</p>
-            <span className='material-symbols-outlined' onClick={() => handleRemoveTask(index)}> delete </span>
+            <button className='material-symbols-outlined' onClick={() => handleRemoveTask(index)}> delete </button>
         </div>
         ))}
     </div>

@@ -7,7 +7,6 @@ function Navbar () {
     // const navbarIcons = { width: '2rem', height: '2rem' };
 
     return <>
-    
     <div className="navbar">
 
         <Link className='navitem' to="/">
