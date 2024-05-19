@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import "./TaskBar.scss";
 
 const TaskBar = () => {
-  const [tasks, setTasks] = useState([]);
+  const [tasks, setTasks] = useState(["Learn Tailwind CSS","Do the laundry"]);
   const [inputValue, setInputValue] = useState('');
 
   const handleAddTask = (e) => {
@@ -19,9 +19,10 @@ const TaskBar = () => {
     setTasks(updatedTasks);
   };
 
+
   return (
     <div className='taskbox'>
-      <form className='add-task-slot' onSubmit={(e)=>handleAddTask(e)}>
+      <form className='add-task-slot pr-1' onSubmit={(e)=>handleAddTask(e)}>
         <input
           name='taskinput'
           type="text"
@@ -29,12 +30,12 @@ const TaskBar = () => {
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
         />
-        <span type='submit' className="material-symbols-outlined addbutton"> add </span>
+        <button type='submit' className="material-symbols-outlined addbutton surface-container"> add </button>
       </form>
         {tasks.map((task, index) => (
-        <div key={index} className='taskslot'>
+        <div key={index} className='taskslot items-center pr-1'>
             <p>{task}</p>
-            <button className='material-symbols-outlined' onClick={() => handleRemoveTask(index)}> delete </button>
+            <button className='material-symbols-outlined button-hover flex-shrink-0 h-10 w-10 ' onClick={() => handleRemoveTask(index)}> delete </button>
         </div>
         ))}
     </div>

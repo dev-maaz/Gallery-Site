@@ -20,18 +20,16 @@ input,textarea {
 
     border: solid 1px;
     border-width: 0.1rem;
-    border-color: var(--text-color);
-    border-radius: 0.25rem;
-
-    color: var(--text-color);
-    background-color: var(--primary);
+    border-color: var(--md-sys-color-outline-variant);
+    background-color: var(--md-sys-color-surface-container);
+    border-radius: 0.5rem;
 
     width: 25rem;
 
     text-indent: 0.5rem;
 
     &:hover {
-        border-color: var(--text-highlight);
+        border-color: var(--md-sys-color-outline);
     }
 
     @media (max-width:640px) {
@@ -42,28 +40,8 @@ input,textarea {
  }
 
  input::placeholder,textarea::placeholder {
-
-    color: var(--text-color);
     opacity: 50%;
  }
- 
-
-
-
-button {
-
-    background-color: #31363F; /* Green */
-    border-style: none;
-    border: ridge;
-    border-width: 0.1rem;
-    border-radius: 0.25rem;
-    color: #EEE;    
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    // font-size: 16px;
-
-}
 
 .contactbox{
 

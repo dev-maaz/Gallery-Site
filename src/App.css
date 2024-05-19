@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
 
     --primary: #153448;
@@ -15,9 +19,8 @@
 html , body{
 
     height: 100%;
-
-    color: var(--text-color);
-    background-color: var(--primary);
+    background-color: var(--md-sys-color-surface);
+    color: var(--md-sys-color-on-surface);
 
 }
 
@@ -33,6 +36,20 @@ html , body{
     display: flex;
     flex: auto;
 
+}
+
+.focusable {
+    &:focus-visible {
+        outline: 1px solid var(--md-sys-color-outline);
+        animation: outline-animation 300ms ease-in forwards;
+    }
+}
+
+@keyframes outline-animation {
+    0% {outline-width: 0px}
+    70% {outline-width: 8px;}
+    87.5% {outline-width: 1px;}
+    100% {outline-width: 3px;}
 }
 
 h1, h2, h3, p, input{margin: 0px; padding: 0px;}

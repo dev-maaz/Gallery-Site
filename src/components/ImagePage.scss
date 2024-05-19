@@ -67,7 +67,7 @@ img.picture-format{
     }
 }
 
-button,a.material-symbols-outlined {
+.inner-button,a.material-symbols-outlined {
     text-decoration: none;
     padding: none;
     display: flex;
@@ -78,7 +78,7 @@ button,a.material-symbols-outlined {
     border-radius: 20px;
     transition: 100ms;
     &:hover {
-        background: var(--primary-highlight);
+        background: var(--md-sys-color-surface-container);
     }
     &:active {
         scale: 0.965;

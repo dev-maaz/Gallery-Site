@@ -103,13 +103,13 @@ const ImagePage = () => {
   <div className="bigContainer">
     <Navbar />
     <div className="bongoboy">  
-      <Link to="/Items"className="material-symbols-outlined">arrow_back</Link>
+      <Link to="/Items"className="material-symbols-outlined inner-button">arrow_back</Link>
       <div className="flex-row">
         <img className="picture-format" src={image.imageUrl} alt={image.id}/>
         <div class="flex-col">
-          <h1>{image.title}</h1>
+          <h1 className="text-3xl font-bold">{image.title}</h1>
           <p> {image.description} </p>
-          <button className="material-symbols-outlined">favorite</button>
+          <button className="material-symbols-outlined inner-button">favorite</button>
         </div>
       </div>
     </div>

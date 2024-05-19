@@ -5,7 +5,6 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: var(--primary);
 
     padding-top: 2rem;
     gap: 2rem;
@@ -59,7 +58,6 @@
     text-decoration: none;
     flex-direction: column;
     align-items: center;
-    color: var(--text-color);
 
     .material-symbols-outlined {
         width: 100%;
@@ -68,16 +66,30 @@
 
         padding: 0.25rem 1rem;
         border-radius: 15px;
+
+
+    
     }
 
-    &:hover {
+
+
+    &:hover, &:focus-visible {
         font-weight: 500;
+        
 
         .material-symbols-outlined {
-            background-color: var(--primary-highlight);
+            outline: 1px solid var(--md-sys-color-outline);
+            animation: outline-animation 300ms forwards;
+            background-color: var(--md-sys-color-surface-container);
         }
     }
 
+}
+@keyframes outline-animation {
+    0% {outline-width: 0px}
+    70% {outline-width: 8px;}
+    87.5% {outline-width: 1px;}
+    100% {outline-width: 3px;}
 }
 
 .material-symbols-outlined {

@@ -1,5 +1,6 @@
 
 import './App.css';
+import './material-theme/css/material.css';
 import { Route, Routes } from 'react-router-dom';
 
 import Home from './pages/Home.js';

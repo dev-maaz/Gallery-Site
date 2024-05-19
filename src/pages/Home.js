@@ -14,7 +14,7 @@ const Home = () => {
 
         <Navbar />
         <div style={align}>
-        <h2 style={headinStyle}> Welcome to React </h2>
+        <h2 class="text-3xl font-bold pb-12"> Welcome to React </h2>
         <LoopingRhombusesSpinner size="40" color='#DFEDF6'/>
         </div>
 

@@ -10,12 +10,6 @@
     border-radius: 20px;
 
     border: none;
-    color: var(--text-color);
-    background-color: transparent;
-
-    &:hover {
-      background-color: var(--primary-highlight);
-  }
 
 }
 
@@ -37,19 +31,18 @@
 
     border-radius: 20px;
     border: none;
-    color: var(--text-color);
-    background-color: var(--primary-highlight);
     height: 40px;
     width: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid var(--md-sys-color-outline-variant);
 
   
     &:hover {
-      background-color: var(--primary-highlight);
+      background-color: var(--md-sys-color-surface-container);
+      border-color: var(--md-sys-color-outline);
   }
-
 }
 
 .taskbox{
@@ -92,7 +85,15 @@
     border-radius: 5px;
 
     &:hover {
-        background-color: var(--primary-highlight);
+        background-color: var(--md-sys-color-surface-container);
+    }
+
+}
+
+.button-hover {
+
+    &:hover {
+        background-color: var(--md-sys-color-primary-container);
     }
 
 }
