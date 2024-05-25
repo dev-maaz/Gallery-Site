@@ -22,7 +22,7 @@
         height: 5rem;
         padding: 0 1rem;
 
-        background-color: var(--primary);
+        background-color: var(--md-sys-color-surface-container);
         z-index: 10;
 
         justify-content:space-evenly;
@@ -70,8 +70,6 @@
 
     
     }
-
-
 
     &:hover, &:focus-visible {
         font-weight: 500;
